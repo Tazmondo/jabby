@@ -54,7 +54,7 @@ return {
 	]]
 	send_mouse_entity = 
 		net.create_event("send_mouse_entity", true)
-		:: types.NetEvent<number, Part?, number?, string?>,
+		:: types.NetEvent<number, PVInstance?, number?, string?>,
 
 	--[=[
 	Requests the server to validate a query

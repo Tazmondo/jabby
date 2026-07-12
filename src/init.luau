@@ -14,7 +14,7 @@ type Applet<T> = {
 
 local world_applet = {
 	add_to_public = function(
-		name: string, config: { world: jecs.World, entities: {[Instance]: jecs.Entity<any>}?, get_entity_from_part: ((part: BasePart) -> (jecs.Entity<any>, Part?))? }
+		name: string, config: { world: jecs.World, entities: {[Instance]: jecs.Entity<any>}?, get_entity_from_part: ((part: BasePart) -> (jecs.Entity<any>?, PVInstance?))? }
 	)
 		public.updated = true
 		table.insert(public, {

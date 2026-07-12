@@ -104,7 +104,7 @@ export type World = {
 	world: jecs.World,
 
 	entities: {[Instance]: jecs.Entity<any>}?,
-	get_entity_from_part: ((part: BasePart) -> (jecs.Entity<any>?, Part?))?
+	get_entity_from_part: ((part: BasePart) -> (jecs.Entity<any>?, PVInstance?))?
 }
 
 export type Application<T> = {
